@@ -25,6 +25,8 @@ nav:
       - configs/services.md
       - configs/kubernetes.md
       - configs/docker.md
+      - configs/proxmox.md
+      - configs/mcp.md
       - configs/custom-css-js.md
   - "Widgets":
       - widgets/index.md
@@ -32,19 +34,23 @@ nav:
           - widgets/services/index.md
           - widgets/services/adguard-home.md
           - widgets/services/apcups.md
+          - widgets/services/arcane.md
           - widgets/services/argocd.md
           - widgets/services/atsumeru.md
           - widgets/services/audiobookshelf.md
           - widgets/services/authentik.md
           - widgets/services/autobrr.md
           - widgets/services/azuredevops.md
+          - widgets/services/backrest.md
           - widgets/services/bazarr.md
+          - widgets/services/booklore.md
           - widgets/services/beszel.md
           - widgets/services/caddy.md
           - widgets/services/calendar.md
           - widgets/services/calibre-web.md
           - widgets/services/changedetectionio.md
           - widgets/services/channelsdvrserver.md
+          - widgets/services/checkmk.md
           - widgets/services/cloudflared.md
           - widgets/services/coin-market-cap.md
           - widgets/services/crowdsec.md
@@ -52,10 +58,14 @@ nav:
           - widgets/services/deluge.md
           - widgets/services/develancacheui.md
           - widgets/services/diskstation.md
+          - widgets/services/dispatcharr.md
+          - widgets/services/dockhand.md
           - widgets/services/downloadstation.md
+          - widgets/services/duplicati.md
           - widgets/services/emby.md
           - widgets/services/esphome.md
           - widgets/services/evcc.md
+          - widgets/services/filebrowser.md
           - widgets/services/fileflows.md
           - widgets/services/firefly.md
           - widgets/services/flood.md
@@ -83,9 +93,10 @@ nav:
           - widgets/services/jackett.md
           - widgets/services/jdownloader.md
           - widgets/services/jellyfin.md
-          - widgets/services/jellyseerr.md
+          - widgets/services/jellystat.md
           - widgets/services/kavita.md
           - widgets/services/komga.md
+          - widgets/services/komodo.md
           - widgets/services/kopia.md
           - widgets/services/lidarr.md
           - widgets/services/linkwarden.md
@@ -107,6 +118,7 @@ nav:
           - widgets/services/nextcloud.md
           - widgets/services/nextdns.md
           - widgets/services/nginx-proxy-manager.md
+          - widgets/services/ntfy.md
           - widgets/services/nzbget.md
           - widgets/services/octoprint.md
           - widgets/services/omada.md
@@ -115,7 +127,7 @@ nav:
           - widgets/services/openmediavault.md
           - widgets/services/opnsense.md
           - widgets/services/openwrt.md
-          - widgets/services/overseerr.md
+          - widgets/services/pangolin.md
           - widgets/services/paperlessngx.md
           - widgets/services/peanut.md
           - widgets/services/pelican.md
@@ -132,6 +144,7 @@ nav:
           - widgets/services/proxmox.md
           - widgets/services/proxmoxbackupserver.md
           - widgets/services/pterodactyl.md
+          - widgets/services/pulse.md
           - widgets/services/pyload.md
           - widgets/services/qbittorrent.md
           - widgets/services/qnap.md
@@ -141,7 +154,10 @@ nav:
           - widgets/services/rutorrent.md
           - widgets/services/sabnzbd.md
           - widgets/services/scrutiny.md
+          - widgets/services/seerr.md
+          - widgets/services/slskd.md
           - widgets/services/sonarr.md
+          - widgets/services/sparkyfitness.md
           - widgets/services/speedtest-tracker.md
           - widgets/services/spoolman.md
           - widgets/services/stash.md
@@ -149,24 +165,31 @@ nav:
           - widgets/services/suwayomi.md
           - widgets/services/swagdashboard.md
           - widgets/services/syncthing-relay-server.md
+          - widgets/services/syncthing.md
           - widgets/services/tailscale.md
           - widgets/services/tandoor.md
           - widgets/services/technitium.md
           - widgets/services/tdarr.md
           - widgets/services/traefik.md
+          - widgets/services/tracearr.md
           - widgets/services/transmission.md
+          - widgets/services/trilium.md
           - widgets/services/truenas.md
           - widgets/services/tubearchivist.md
           - widgets/services/unifi-controller.md
+          - widgets/services/unifi-drive.md
           - widgets/services/unmanic.md
+          - widgets/services/unraid.md
           - widgets/services/uptime-kuma.md
           - widgets/services/uptimerobot.md
           - widgets/services/urbackup.md
           - widgets/services/vikunja.md
+          - widgets/services/wallos.md
           - widgets/services/watchtower.md
           - widgets/services/wgeasy.md
           - widgets/services/whatsupdocker.md
           - widgets/services/xteve.md
+          - widgets/services/yourspotify.md
           - widgets/services/zabbix.md
       - "Information Widgets":
           - widgets/info/index.md

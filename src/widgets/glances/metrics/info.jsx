@@ -1,8 +1,9 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next/pages";
 
 import Block from "../components/block";
 import Container from "../components/container";
 
+import { parseVersionForUrl } from "utils/proxy/api-helpers";
 import useWidgetAPI from "utils/proxy/use-widget-api";
 
 function Swap({ quicklookData, className = "" }) {
@@ -31,7 +32,8 @@ function CPU({ quicklookData, className = "" }) {
 
   return (
     quicklookData &&
-    quicklookData.cpu && (
+    quicklookData.cpu !== undefined &&
+    quicklookData.cpu !== null && (
       <div className="text-xs flex place-content-between">
         <div className={className}>{t("glances.cpu")}</div>
         <div className={className}>
@@ -74,12 +76,13 @@ const defaultSystemInterval = 30000; // This data (OS, hostname, distribution) i
 export default function Component({ service }) {
   const { widget } = service;
   const { chart, refreshInterval = defaultInterval, version = 3 } = widget;
+  const apiVersion = parseVersionForUrl(version, 3);
 
-  const { data: quicklookData, errorL: quicklookError } = useWidgetAPI(service.widget, `${version}/quicklook`, {
+  const { data: quicklookData, errorL: quicklookError } = useWidgetAPI(service.widget, `${apiVersion}/quicklook`, {
     refreshInterval,
   });
 
-  const { data: systemData, errorL: systemError } = useWidgetAPI(service.widget, `${version}/system`, {
+  const { data: systemData, errorL: systemError } = useWidgetAPI(service.widget, `${apiVersion}/system`, {
     refreshInterval: defaultSystemInterval,
   });
 
